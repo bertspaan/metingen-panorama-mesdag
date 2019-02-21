@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+  <style>
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  #slider-container {
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    width: 30%;
+    box-sizing: border-box;
+
+    border: 2px solid rgba(0,0,0,0.2);
+    background-clip: padding-box;
+    border-radius: 2px;
+
+    left: calc(50% - 15%);
+    z-index: 9999;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    background-color: white;
+    padding: .5em 1em;
+    display: flex;
+  }
+
+  #slider {
+    margin: 0 1em;
+    padding: 0;
+    width: 100%;
+  }
+
+  #opacity {
+    text-align: right;
+    width: 4.5em;
+  }
+
+  @media (max-width: 1000px) {
+    #slider-container {
+      width: 95%;
+      left: 2.5%;
+    }
+  }
+  </style>>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="slider-container">
+    <label for="slider">Opacity:</label>
+    <input id="slider" type="range" min="1" max="100" step="1" value="100">
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+  <script>
+
+    var osmLayer = new L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      minZoom: 10
+    })
+
+    var tileLayer = new L.tileLayer('http://mapwarper.net/maps/tile/37619/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      minZoom: 10
+    })
+
+    var map = new L.Map('map', {
+      layers: [osmLayer, tileLayer]
+    })
+
+    function onEachFeature(feature, layer) {
+      if (feature.properties && feature.properties.popupContent) {
+        layer.bindPopup(feature.properties.omschrijving)
+      }
+    }
+
+    d3.json('herkenningspunten.geojson').then(function (points) {
+      L.geoJSON(points, {
+        onEachFeature: onEachFeature
+      }).addTo(map)
+    })
+
+    map.setView([52.1092, 4.2773], 14)
+
+    var slider = document.getElementById('slider')
+    function updateOpacity() {
+      var opacity = slider.value / 100
+      tileLayer.setOpacity(opacity)
+    }
+
+    slider.addEventListener('input', updateOpacity)
+    // In IE<=11, input event does not work
+    slider.addEventListener('change', updateOpacity)
+    updateOpacity()
+  </script>
+</body>
+</html>
