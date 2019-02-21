@@ -80,7 +80,7 @@
     })
 
     function onEachFeature(feature, layer) {
-      if (feature.properties && feature.properties.popupContent) {
+      if (feature.properties) {
         layer.bindPopup(feature.properties.omschrijving)
       }
     }
