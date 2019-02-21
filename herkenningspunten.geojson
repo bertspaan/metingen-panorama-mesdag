@@ -1,19 +1,227 @@
 {
-"type": "FeatureCollection",
-"name": "herkenningspunten",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::28992" } },
-"features": [
-{ "type": "Feature", "properties": { "nr": 12, "x": 78984.918, "y": 458617.899, "omschrijving": "eerste schoorsteen paviljoen von Vied", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 78984.918, 458617.899 ] } },
-{ "type": "Feature", "properties": { "nr": 7, "x": 80991.87, "y": 459331.95, "omschrijving": "de watertoren", "geschatte precisie": 10, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 80991.87, 459331.95 ] } },
-{ "type": "Feature", "properties": { "nr": 29, "x": 81069.721, "y": 455524.337, "omschrijving": "RK kerk Jacob de Meerdere", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 81069.721, 455524.337 ] } },
-{ "type": "Feature", "properties": { "nr": 28, "x": 81140.174, "y": 455412.745, "omschrijving": "de klooster kerk", "geschatte precisie": 100, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 81140.174, 455412.745 ] } },
-{ "type": "Feature", "properties": { "nr": 27, "x": 81543.624, "y": 454767.628, "omschrijving": "de nieuwe kerk aan het Spui", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 81543.624, 454767.628 ] } },
-{ "type": "Feature", "properties": { "nr": 26, "x": 80651.662, "y": 455503.206, "omschrijving": "torentje koninklijke stallen", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 80651.662, 455503.206 ] } },
-{ "type": "Feature", "properties": { "nr": 25, "x": 80922.751, "y": 454893.974, "omschrijving": "Grote of st. Jacobskerk", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 80922.751, 454893.974 ] } },
-{ "type": "Feature", "properties": { "nr": null, "x": null, "y": null, "omschrijving": "3e RK kerk aan de Scheveningseweg", "geschatte precisie": null, "type": null, "url": null }, "geometry": null },
-{ "type": "Feature", "properties": { "nr": 21, "x": 78654.529, "y": 458208.215, "omschrijving": "oude kerk Keizerstraat", "geschatte precisie": 50, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 78654.529, 458208.215 ] } },
-{ "type": "Feature", "properties": { "nr": 20, "x": 78341.845, "y": 457912.53, "omschrijving": "vuurtoren", "geschatte precisie": 10, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 78341.845, 457912.53 ] } },
-{ "type": "Feature", "properties": { "nr": 19, "x": 78449.738, "y": 458103.32, "omschrijving": "gedenknaald", "geschatte precisie": 10, "type": "geconstrueerd", "url": null }, "geometry": { "type": "Point", "coordinates": [ 78449.738, 458103.32 ] } },
-{ "type": "Feature", "properties": { "nr": null, "x": 86892.648, "y": 468484.002, "omschrijving": "vuurtoren katwijk", "geschatte precisie": 100, "type": "uit BGT", "url": "https:\/\/nl.wikipedia.org\/wiki\/Vuurbaak_van_Katwijk_aan_Zee" }, "geometry": { "type": "Point", "coordinates": [ 86892.648, 468484.002 ] } }
-]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 12,
+        "x": 78984.918,
+        "y": 458617.899,
+        "omschrijving": "eerste schoorsteen paviljoen von Vied",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.277505819382221,
+          52.11056434969602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 7,
+        "x": 80991.87,
+        "y": 459331.95,
+        "omschrijving": "de watertoren",
+        "geschatte precisie": 10,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.306643867256982,
+          52.11725341468334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 29,
+        "x": 81069.721,
+        "y": 455524.337,
+        "omschrijving": "RK kerk Jacob de Meerdere",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.30860627973149,
+          52.083045889960324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 28,
+        "x": 81140.174,
+        "y": 455412.745,
+        "omschrijving": "de klooster kerk",
+        "geschatte precisie": 100,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.309658132757177,
+          52.08205244364256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 27,
+        "x": 81543.624,
+        "y": 454767.628,
+        "omschrijving": "de nieuwe kerk aan het Spui",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.315681990420162,
+          52.076308598905968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 26,
+        "x": 80651.662,
+        "y": 455503.206,
+        "omschrijving": "torentje koninklijke stallen",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.302512705375985,
+          52.082800013834031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 25,
+        "x": 80922.751,
+        "y": 454893.974,
+        "omschrijving": "Grote of st. Jacobskerk",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.306599310569721,
+          52.077361338038791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": null,
+        "x": null,
+        "y": null,
+        "omschrijving": "3e RK kerk aan de Scheveningseweg",
+        "geschatte precisie": null,
+        "type": null,
+        "url": null
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 21,
+        "x": 78654.529,
+        "y": 458208.215,
+        "omschrijving": "oude kerk Keizerstraat",
+        "geschatte precisie": 50,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.272775355172444,
+          52.106837183696214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 20,
+        "x": 78341.845,
+        "y": 457912.53,
+        "omschrijving": "vuurtoren",
+        "geschatte precisie": 10,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.268278407918492,
+          52.104136745732887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": 19,
+        "x": 78449.738,
+        "y": 458103.32,
+        "omschrijving": "gedenknaald",
+        "geschatte precisie": 10,
+        "type": "geconstrueerd",
+        "url": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.269810096075459,
+          52.105866238232018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nr": null,
+        "x": 86892.648,
+        "y": 468484.002,
+        "omschrijving": "vuurtoren katwijk",
+        "geschatte precisie": 100,
+        "type": "uit BGT",
+        "url": "https:\/\/nl.wikipedia.org\/wiki\/Vuurbaak_van_Katwijk_aan_Zee"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.39095109879749,
+          52.200259279836999
+        ]
+      }
+    }
+  ]
 }
